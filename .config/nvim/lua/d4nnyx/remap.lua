@@ -74,3 +74,8 @@ vim.keymap.set(
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+vim.keymap.set("n", "gd", vim.lsp.buf.definition)
+vim.keymap.set("n", "gD", vim.lsp.buf.declaration)
+vim.keymap.set("n", "gr", vim.lsp.buf.references)
+vim.keymap.set("n", "gi", vim.lsp.buf.implementation)
