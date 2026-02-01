@@ -8,3 +8,7 @@ cursor-style-blink = false
 cursor-color = "#FFFFFF"
 shell-integration-features = no-cursor
 
+copy-on-select = clipboard
+
+initial-command = "/opt/homebrew/bin/tmux"
+command = "/opt/homebrew/bin/tmux"
