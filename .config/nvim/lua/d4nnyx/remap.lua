@@ -80,7 +80,7 @@ vim.keymap.set("n", "gD", vim.lsp.buf.declaration)
 vim.keymap.set("n", "gr", vim.lsp.buf.references)
 vim.keymap.set("n", "gi", vim.lsp.buf.implementation)
 
-vim.keymap.set("n", "<leader>oc", function()
+vim.keymap.set("n", "<leader>cd", function()
   local file_dir = vim.fn.expand("%:p:h")
   if file_dir == "" then
     print("No file directory found")
