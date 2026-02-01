@@ -12,3 +12,5 @@ copy-on-select = clipboard
 
 initial-command = "/opt/homebrew/bin/tmux"
 command = "/opt/homebrew/bin/tmux"
+
+keybind = cmd+%=increase_font_size:1
