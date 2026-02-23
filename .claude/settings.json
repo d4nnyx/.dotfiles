@@ -34,7 +34,6 @@
       "Bash(sleep *)",
       "Bash(tail *)",
       "Bash(head *)",
-      "Bash(xargs *)",
       "Bash(tflint *)",
       "Bash(terragrunt init *)",
       "Bash(terragrunt plan *)",
@@ -55,6 +54,11 @@
       "WebFetch",
       "Bash(bun *)",
       "Bash(test *)"
+    ],
+    "deny": [
+      "Bash(find *)",
+      "Bash(ls *)",
+      "Bash(grep *)"
     ],
     "defaultMode": "plan"
   },

@@ -6,7 +6,7 @@ return {
     terminal = {
       provider = "external",
       provider_opts = {
-        external_terminal_cmd = "tmux split-window -h %s",
+        external_terminal_cmd = "tmux split-window -h %s --ide",
       },
     },
   },
