@@ -16,6 +16,13 @@
       "Write(~/.claude.json)",
       "Read(~/DEV/**)",
       "Write(~/DEV/**)",
+      "Edit(~/DEV/**)",
+      "Read(~/DEV/**/.claude/**)",
+      "Write(~/DEV/**/.claude/**)",
+      "Edit(~/DEV/**/.claude/**)",
+      "Read(~/DEV/**/.gitlab/**)",
+      "Write(~/DEV/**/.gitlab/**)",
+      "Edit(~/DEV/**/.gitlab/**)",
       "Read(~/.config/nvim/**)",
       "Glob(~/**)",
       "Grep(~/**)",
@@ -45,6 +52,8 @@
       "Bash(helm *)",
       "Bash(git *)",
       "Bash(glab *)",
+      "Bash(which *)",
+      "Bash(argocd app get *)",
       "mcp__kubernetes",
       "mcp__context7",
       "mcp__terraform",
@@ -53,7 +62,8 @@
       "WebSearch",
       "WebFetch",
       "Bash(bun *)",
-      "Bash(test *)"
+      "Bash(test *)",
+      "Bash(wails *)"
     ],
     "deny": [
       "Bash(find *)",
@@ -91,5 +101,6 @@
       "Channeling the dark side",
       "Negotiating with Jawas"
     ]
-  }
+  },
+  "effortLevel": "high"
 }
