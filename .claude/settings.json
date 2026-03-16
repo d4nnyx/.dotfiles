@@ -30,40 +30,20 @@
       "Glob(/tmp/**)",
       "Grep(/tmp/**)",
       "Search(/tmp/**)",
-      "Bash(echo *)",
-      "Bash(tar *)",
-      "Bash(cd *)",
-      "Bash(cat *)",
-      "Bash(mkdir *)",
-      "Bash(mv *)",
-      "Bash(tail *)",
-      "Bash(sed *)",
-      "Bash(sleep *)",
-      "Bash(tail *)",
-      "Bash(head *)",
-      "Bash(tflint *)",
-      "Bash(terragrunt init *)",
-      "Bash(terragrunt plan *)",
-      "Bash(terraform plan *)",
-      "Bash(go *)",
-      "Bash(yamllint *)",
-      "Bash(ansible-lint *)",
-      "Bash(ansible *)",
-      "Bash(helm *)",
-      "Bash(git *)",
-      "Bash(glab *)",
-      "Bash(which *)",
-      "Bash(argocd app get *)",
+      "Bash(*)",
       "mcp__kubernetes",
       "mcp__context7",
       "mcp__terraform",
       "mcp__freelo-docker",
       "mcp__chrome",
       "WebSearch",
-      "WebFetch",
-      "Bash(bun *)",
-      "Bash(test *)",
-      "Bash(wails *)"
+      "WebFetch"
+    ],
+    "ask": [
+      "Bash(rm *)",
+      "Bash(kubectl delete *)",
+      "Bash(argocd app delete *)",
+      "Bash(argocd appset delete *)"
     ],
     "deny": [
       "Bash(find *)",
@@ -102,5 +82,6 @@
       "Negotiating with Jawas"
     ]
   },
-  "effortLevel": "high"
+  "effortLevel": "high",
+  "voiceEnabled": true
 }
