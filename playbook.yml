@@ -1,0 +1,28 @@
+---
+- name: Deploy dotfiles
+  hosts: localhost
+  connection: local
+
+  tasks:
+    - name: Template .tmux.conf
+      ansible.builtin.template:
+        src: .tmux.conf
+        dest: ~/.tmux.conf
+        mode: '0644'
+
+    - name: Copy .config/
+      ansible.builtin.copy:
+        src: .config/
+        dest: ~/.config/
+
+    - name: Ensure ~/.claude directory exists
+      ansible.builtin.file:
+        path: ~/.claude
+        state: directory
+        mode: '0755'
+
+    - name: Copy .claude/
+      ansible.builtin.copy:
+        src: .claude/
+        dest: ~/.claude/
+
